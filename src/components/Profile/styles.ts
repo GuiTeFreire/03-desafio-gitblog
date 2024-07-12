@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
-export const ProfileContainer = styled.section`
+export const ProfileContainer = styled.div`
   position: absolute;
-  width: 864px;
-  height: 212px;
+  width: 54rem;
+  height: 13.25rem;
   left: calc(50% - 864px / 2);
-  top: 280px;
+  top: 13rem;
   background: #0b1b2b;
   box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
   border-radius: 10px;

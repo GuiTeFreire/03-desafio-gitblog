@@ -31,12 +31,9 @@ function SearchFormComponent() {
 
   return (
     <SearchFormContainer onSubmit={handleSubmit(handleSearchPosts)}>
-      <h1>Publicações</h1>
-      <span>6 publicações</span>
       <input
         type="text"
         placeholder="Buscar Conteúdo"
-        color="#3a536b"
         disabled={isSubmitting}
         {...register('query')}
       />

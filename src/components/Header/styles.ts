@@ -1,24 +1,20 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-  position: relative;
-  padding: 0;
-  margin: 0;
   width: 100%;
+  height: 18.5rem; /* Ajuste a altura conforme necessário */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    height: 40vh; /* Ajuste a altura para telas menores, se necessário */
+  }
 `
 
-export const HeaderContent = styled.div`
-  position: relative;
+export const HeaderImage = styled.img`
   width: 100%;
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
+  height: 100%;
+  object-fit: cover;
 `
