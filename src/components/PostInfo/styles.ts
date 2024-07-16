@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-export const ProfileContainer = styled.div`
+export const InfoContainer = styled.div`
   position: absolute;
   width: 54rem;
-  height: 13.25rem;
+  height: 10.5rem;
   left: calc(50% - 864px / 2);
   top: 13rem;
   background: #0b1b2b;
@@ -11,22 +11,12 @@ export const ProfileContainer = styled.div`
   border-radius: 10px;
 `
 
-export const Avatar = styled.img`
+export const Title = styled.strong`
   position: absolute;
-  width: 148px;
-  height: 148px;
-  left: 40px;
-  top: calc(50% - 148px / 2);
-
-  background: url(.png);
-  border-radius: 8px;
-`
-export const Name = styled.strong`
-  position: absolute;
-  width: 236px;
   height: 31px;
-  left: 220px;
-  top: calc(50% - 31px / 2 - 50.5px);
+  left: 32px;
+  right: 32px;
+  top: 71px;
 
   font-family: 'Nunito';
   font-style: normal;
@@ -37,36 +27,19 @@ export const Name = styled.strong`
   color: #e7edf4;
 `
 
-export const Bio = styled.p`
-  position: absolute;
-  width: 612px;
-  height: 52px;
-  left: 220px;
-  top: 79px;
-
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-
-  color: #afc2d4;
-`
-
 export const Info = styled.h2`
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 24px;
+  gap: 90px;
 
   position: absolute;
-  width: 393px;
+  width: 390px;
   height: 26px;
-  left: 220px;
-  top: calc(50% - 26px / 2 + 62px);
+  left: 32px;
+  top: 110px;
 `
-
 export const Username = styled.span`
   display: flex;
   flex-direction: row;
@@ -100,7 +73,7 @@ export const Username = styled.span`
     font-size: 16px;
     line-height: 160%;
 
-    color: #c4d4e3;
+    color: #7b96b2;
 
     flex: none;
     order: 1;
@@ -108,18 +81,18 @@ export const Username = styled.span`
   }
 `
 
-export const Company = styled.span`
+export const Date = styled.span`
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 8px;
 
-  width: 111px;
+  width: 87px;
   height: 26px;
 
   flex: none;
-  order: 0;
+  order: 1;
   flex-grow: 0;
 
   img {
@@ -132,7 +105,7 @@ export const Company = styled.span`
   }
 
   span {
-    width: 80px;
+    width: 161px;
     height: 26px;
 
     font-family: 'Nunito';
@@ -141,7 +114,7 @@ export const Company = styled.span`
     font-size: 16px;
     line-height: 160%;
 
-    color: #c4d4e3;
+    color: #7b96b2;
 
     flex: none;
     order: 1;
@@ -149,18 +122,18 @@ export const Company = styled.span`
   }
 `
 
-export const Followers = styled.span`
+export const Comments = styled.span`
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 8px;
 
-  width: 111px;
+  width: 128px;
   height: 26px;
 
   flex: none;
-  order: 0;
+  order: 2;
   flex-grow: 0;
 
   img {
@@ -182,7 +155,7 @@ export const Followers = styled.span`
     font-size: 16px;
     line-height: 160%;
 
-    color: #c4d4e3;
+    color: #7b96b2;
 
     flex: none;
     order: 1;
@@ -198,10 +171,45 @@ export const GithubLink = styled.a`
   gap: 8px;
 
   position: absolute;
-  width: 67px;
+  width: 115px;
   height: 19px;
   right: 32px;
-  top: 40px;
+  top: 32px;
+
+  &:hover {
+    border-bottom: 1px solid #3294f8;
+  }
+
+  span {
+    width: 95px;
+    height: 19px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 160%;
+    text-transform: uppercase;
+
+    color: #3294f8;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+`
+export const Back = styled.a`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 67px;
+  height: 19px;
+  left: 32px;
+  top: 32px;
 
   &:hover {
     border-bottom: 1px solid #3294f8;

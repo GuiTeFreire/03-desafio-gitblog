@@ -49,13 +49,12 @@ export const PostList = styled.div`
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
-  flex-direction: row;
   position: absolute;
   flex-wrap: wrap;
 
   width: 864px;
   height: 844px;
-  margin-top: 331px;
+  margin-top: 321px;
   margin-bottom: 234px;
   left: calc(50% - 864px / 2);
 `

@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled(Link)`
   display: flex;
   position: relative;
   width: 416px;
@@ -8,27 +9,33 @@ export const Container = styled.div`
 
   background: #112131;
   border-radius: 16px 16px;
+
+  &:hover {
+    border: 2px solid #3a536b;
+  }
 `
 
 export const Title = styled.h3`
-  /* JavaScript data types and data structures */
-
   position: absolute;
   height: 64px;
   left: 32px;
   right: 101px;
   top: 32px;
 
-  /* Title/Title M */
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 160%;
-  /* or 32px */
 
-  /* Base/Title */
   color: #e7edf4;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Número de linhas antes do truncamento */
+  -webkit-box-orient: vertical;
 `
 
 export const Content = styled.p`
@@ -54,10 +61,8 @@ export const Content = styled.p`
   color: #afc2d4;
 `
 export const PostTime = styled.span`
-  /* Há 1 dia */
-
   position: absolute;
-  width: 53px;
+  width: 57px;
   height: 22px;
   right: 32px;
   top: 37px;
@@ -66,8 +71,8 @@ export const PostTime = styled.span`
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 160%;
+  font-size: 0.875rem;
+  line-height: 120%;
   /* or 22px */
 
   /* Base/Span */
