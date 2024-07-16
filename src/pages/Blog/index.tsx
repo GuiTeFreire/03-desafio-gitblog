@@ -2,9 +2,14 @@ import { useEffect, useState } from 'react'
 import { Header } from '../../components/Header'
 import { PostCard } from '../../components/PostCard'
 import { Profile } from '../../components/Profile'
-import { BlogContainer, PostCount, PostList, SearchTitle } from './styles'
+import {
+  BlogContainer,
+  PostCount,
+  PostList,
+  SearchTitle,
+  SearchFormContainer,
+} from './styles'
 import { searchIssues } from '../../lib/axios'
-import { SearchFormContainer } from '../Post/styles'
 import * as z from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
